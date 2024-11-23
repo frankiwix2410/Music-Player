@@ -1,0 +1,115 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: #c9ced3;
+    display: flex;
+    justify-content: center;
+    align-items: cneter;
+    background: linear-gradient(249deg, #001aff, #71caed, #4ff6a5);
+    background-size: 600% 600%;
+    animation: animateBackground 30s ease infinite;
+}
+
+@keyframes animateBackground {
+    0%{
+        background-position: 0% 67%;
+    }
+
+    50%{
+        background-position: 100% 34%;
+    }
+
+    100%{
+        background-position: 0% 67%;
+    }
+}
+
+.container{
+    height: 450px;
+    width: 325px;
+    background-color: rgba(255,255,255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.container .img-container{
+    width: 270px;
+    height: 270px;
+    position: relative;
+    top: -50px;
+    left: 25px;
+}
+
+.container .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.3) ;
+    margin-top: 50px;
+}
+
+.container h2{
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+
+}
+
+.container h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    margin: 5px 0 0;
+}
+
+
+.container .progressBar{
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 20px;
+    width: 90%;
+    height: 4px;
+}
+
+.container .progressBar .progress{
+    background: #000000;
+    border-radius: 5px;
+    width: 0;
+    height: 100%;
+    transition: width 0.1s linear;
+}
+
+.container .progressBar .duracion{
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .controles{
+    position: relative;
+    top: -15px;
+    left: 85px;
+    width: 200px;
+}
+
+.container .controles ion-icon{
+    font-size: 30px;
+    color: #010101;
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+}
